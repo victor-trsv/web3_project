@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>ПМИ-31 Бригада 7</title>
+  </head>
+<style>
+
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: white;
+        font-family: georgia;
+      }
+
+      .ivan_style {
+        background-color: rgba(255, 255, 255, 0.85);
+        color: black;
+        padding: 25px 30px;
+        max-width: 900px;
+        margin: 30px auto;
+        border-radius: 15px;
+        font-size: 18px;
+        line-height: 1.6;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+      }
+      .victor_style {
+        background-color: rgba(255, 255, 255, 0.85);
+        color: black;
+        padding: 25px 30px;
+        max-width: 900px;
+        margin: 30px auto;
+        border-radius: 15px;
+        font-size: 18px;
+        line-height: 1.6;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .background {
+        background-image: url('bg.jpg');
+        width: 100vw;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .center-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 20px;
+    }
+      .telegram-button {
+          width:150px;
+          display: block;
+          background-color: #0088cc;
+          color: white;
+          text-decoration: none;
+          padding: 10px 20px;
+          font-size: 16px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 10px;
+          border-radius: 10px;
+        }
+
+</style>
+<body>
+    <div class = "background">
+    <h1>Сагайдак Иван Вячеславович</h1>
+    <img src="Ivan.jpg" width="300px" height="300px" class="center-img">
+        <p class="ivan_style">Я Сагайдак Иван Вячеславович, мне 21 год.
+         Я учусь в НГТУ на факультете прикладной математики и информатики.
+         В свободное от учебы время изучаю Java и фреймворк Spring.
+          Параллельно увлекаюсь историей, просматриваю документальные фильмы и видео на эту тему.
+           Кроме того, интересуюсь техникой и видеоиграми.<br><br>
+           Моя цель на ближайшее время — стать бэкенд-разработчиком.
+            Интерес к этой сфере у меня появился ещё в школе, где я в свободное время занимался созданием простых одностраничных и нескольких многостраничных сайтов с использованием HTML, CSS и JavaScript.
+             Также я имел небольшой опыт знакомства с MongoDB и React.
+        </p>
+        <a href="https://t.me/Groza_154" class="telegram-button" target="_blank">
+    Написать в Telegram
+  </a>
+      <h1>Тарасов Виктор Александрович</h1>
+      <img src="Victor.jpg" width="300px" height="300px" class="center-img">
+      <p class="victor_style">Всех приветствую, я Тарасов Виктор Александрович, мне 20 лет.
+         Являюсь студентом НГТУ факультета прикладной математики и информатики, сейчас на 3 курсе.
+         При появлении свободного времени играю на гитаре, приобретаю навыки в написании мелодий и программировании на различных языках как Python, JavaScript и С++. 
+        </p>
+        <a href="https://t.me/GreyXL" class="telegram-button" target="_blank">
+    Написать в Telegram
+  </a>
+   <div class="comments-section">
+    <h2>Комментарии</h2>
+
+    <ul id="commentsList"></ul>
+
+    <form id="commentForm">
+        <input type="text" id="commentName" placeholder="Ваше имя" required>
+        <textarea id="commentInput" placeholder="Напишите комментарий..." required></textarea>
+        <button type="submit">Добавить</button>
+    </form>
+</div>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</body>
+</html>
