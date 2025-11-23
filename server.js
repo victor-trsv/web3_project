@@ -32,4 +32,10 @@ app.post("/comments", (req, res) => {
     res.json(comment);
 });
 
+// 🔹 Временный маршрут для скачивания файла комментариев
+app.get("/download-comments", (req, res) => {
+    if (!fs.existsSync(COMMENTS_FILE)) return res.status(404).send("Файл не найден");
+    res.download(COMMENTS_FILE, "comments.txt");
+});
+
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
